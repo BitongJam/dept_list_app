@@ -1,7 +1,7 @@
 export default {
     PRIMARY: '#ececec',
-    SECONDARY: '#161625',
-    ACCENT: '#10e497',
+    SECONDARY: '#aec8e7',
+    ACCENT: '#02387d',
     ERROR: '#ff0000',
   };
   

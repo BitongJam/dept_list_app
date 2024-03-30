@@ -1,10 +1,12 @@
 import { StyleSheet, Text, View,Modal, TextInput } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import colors from '../misc/colors'
 import MutliTextInput from './MutliTextInput'
 import Button from './Button'
 
-const ModalCard = ({visible}) => {
+const ModalCard = ({visible,onClose}) => {
+ 
+  
   return (
     <Modal style={styles.modalContainer} transparent visible={visible}>
     
@@ -14,12 +16,12 @@ const ModalCard = ({visible}) => {
             <MutliTextInput style={styles.modalMultiInput} placeholder="Description"/>
             <TextInput style={styles.modalInput} keyboardType='numeric' placeholder='Amount'/>
             <Button
-                onPress={console.log('on press')}
+                onPress={()=> console.log('on press')}
                 title="Submit"
                 style={styles.modalButton}/>
 
             <Button
-                onPress={console.log('cancel')}
+                onPress={onClose}
                 title="cancel"
                 style={[styles.modalButton,{backgroundColor:'red',color:'white'}]}/>
         </View>

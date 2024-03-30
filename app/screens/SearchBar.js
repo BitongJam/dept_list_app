@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
   },
   container: {
     justifyContent: 'center',
+    borderWidth: 1
   },
   clearIcon: {
     position: 'absolute',
